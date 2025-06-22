@@ -6,3 +6,26 @@ Create a function that generates the Fibonacci sequence up to a user-specified n
 """
 
 # Start your implementation here...
+
+
+def main():
+
+
+    print("Welcome to Fibonacci sequence generator.")
+    num :str = input("Entre a number of term you want to generate:")
+
+    try:
+        num :int =int(num)
+    except:
+        print('Not a valid input')
+
+    control_list=[0,1]
+    print(control_list[0],control_list[1] , end=',')
+    for i in range(num):
+        control_list.append(control_list[len(control_list)-1]+control_list[len(control_list)-2])
+        print(control_list[len(control_list)-1], end=',')
+
+if __name__=="__main__":
+    main()
+
+

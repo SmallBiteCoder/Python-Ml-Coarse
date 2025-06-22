@@ -6,3 +6,31 @@ Build a command-line calculator that takes two numbers and an operation (add, su
 """
 
 # Start your implementation here...
+
+
+while True:
+    try:
+
+        num1 =float(input("Entre first number:")) 
+        num2 =float(input("Entre second number:"))
+        break
+    except Exception as e:
+        print('Entre a valid rational number: ')
+    
+        
+     
+
+print(f"Sum of {num1} and {num2} is ",num1 + num2)
+print(f"Difference of {num1} and {num2} is ",num1 - num2)
+
+print(f"Product of {num1} and {num2} is ",num1 * num2)
+if num2 != 0:
+    print(f"{num1} by {num2} is ",num1 / num2)
+else:
+    print("Can not divide  by Zero is not possible. ")
+
+
+
+
+
+
